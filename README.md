@@ -17,7 +17,7 @@ You can read more details in the [article on Medium]().
 
 The project is dockerized and you have two options to run it:
 * `make pull` - the [prebuilt image](https://hub.docker.com/r/dbaibak/docker_airflow) will be pulled from the Docker Hub;
-* `make build` - you can also build the Docker image(https://github.com/DanilBaibak/docker-airflow/tree/master/docker) by yourself;
+* `make build` - you can also build the [Docker image](https://github.com/DanilBaibak/docker-airflow/tree/master/docker) by yourself;
 * `make init_config` will initialize all necessary configs;
 * `make up_d` will start up your application detached mode. After the application is started, you can easily have access to the project by the link http://localhost:8080/
 
