@@ -11,7 +11,7 @@ This project is an example of how you can improve the two parts of any Machine L
   <img src="https://github.com/DanilBaibak/ml-in-production/blob/master/images/ml_pipeline.png" width="300" title="Machine Learnig Pipeline">
 </p>
 
-You can read more details in the [article on Medium]().
+You can read more details in the [article on Medium](https://medium.com/@danil.baibak/machine-learning-in-production-using-apache-airflow-91d25a4d8152).
 
 ## Installation
 
