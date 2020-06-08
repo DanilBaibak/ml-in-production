@@ -1,0 +1,14 @@
+venv/
+.idea/
+airflow-webserver*
+logs/
+*.cfg
+__pycache__/
+.DS_Store
+
+docker/.bash_history/history
+dags/ml_project/models/*
+!dags/ml_project/models/.gitkeep
+
+config.env
+docker/scripts/config.ini

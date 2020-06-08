@@ -1,0 +1,39 @@
+version: '2'
+
+services:
+  service_web_pipeline:
+    container_name: airflow_pipeline
+    image: dbaibak/docker_airflow:latest
+    env_file:
+      - config.env
+    ports:
+      - 8080:8080
+    restart: always
+    depends_on:
+      - service_postgres_airflow
+      - service_postgres_dev
+    volumes:
+      - ./docker/.bash_history:/home/.bash_history
+      - ./dags:/home/airflow_home/dags
+
+  service_postgres_airflow:
+    container_name: postgres_airflow
+    image: postgres:11.7-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=airflow
+      - POSTGRES_USER=adminuser
+      - POSTGRES_PASSWORD=adminpassword
+      - POSTGRES_LISTENPORT=5432
+
+  service_postgres_dev:
+    container_name: postgres_dev
+    image: postgres:11.7-alpine
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_DB=development
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgres_password
+      - POSTGRES_LISTENPORT=5433

@@ -1,0 +1,5 @@
+[postgres_db]
+dbname = development
+user = postgres_user
+password = postgres_password
+host = service_postgres_dev
