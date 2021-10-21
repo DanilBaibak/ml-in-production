@@ -3,7 +3,7 @@ apache-airflow==1.10.10
 apispec==1.3.3
 argcomplete==1.11.1
 attrs==19.3.0
-Babel==2.8.0
+Babel==2.9.1
 cached-property==1.5.1
 cattrs==0.9.0
 certifi==2019.11.28
